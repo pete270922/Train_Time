@@ -2,35 +2,49 @@
 <html>
 <head>
 <meta charset="UTC-8">
-<title>Trivia Game</title>
+<title>Train_Time</title>
+
     <!-- CSS -->
-    <link type="text/css" src="assets/css/style.css">
+    <link type="text/css" src="css/style.css">
 </head>
 
 
 <body>
 
-<h1 id="head-line">"Trivia Game"</h1>
+<h1 id="head-line">Anytime is Train Time</h1>
+
+<table>
+    <header>Current Train Schedule</header>
+    <th>
+        <tr> Train Name</tr>
+        <tr> Destination</tr>
+        <tr> Frequency(min)</tr>
+        <tr> Next Arrival</tr>
+        <tr> Minutes Away</tr>
+    </th>
+
+</table>
+
 <!--Timer and start button-->
-<div id="timer"></div>
-<button id="start">Start</button>
+<form>
+<label for="name-input"> Train Name:</label>
+<input class="form-control" id="name-input" value="Save" type="text">
+<label for="destination-input">Destination:</label>
+<input class="form-control" id="destination-input" value="Save" type="text">
+<label for="time-input">First Train Time:</label>
+<input class="form-control" id="time-input" value="Save" type="text">
+<label for="frequency-input">Frequency:</label>
+<input class="form-control" id="frequency-input" value="Save" type="text">
 
-<div id="question"></div>
-
-<tbody>
-    <!--Question Table-->
-</tbody>
-
-  <div>
-    <h3>Correct: </h3>
-    <span id="Correct"></span>
-  </div>
+<!-- Submit Button -->
+<button id="click-button" type="submit">Submit</button>
+</form>
 
 </body>
 
      <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Game Logic -->
-    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 
 </html>
