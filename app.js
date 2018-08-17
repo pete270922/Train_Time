@@ -51,9 +51,9 @@
       console.log(snapshot.val().frequency_name);
 
       // Change the HTML
-      $("#displayed-data").text(snapshot.val().train_name + " | " + snapshot.val().destination + " | " + snapshot.val().time)" | " + snapshot.val().frequency_name);
-
+      $("#displayed-data").text(snapshot.val().train_name + " | " + snapshot.val().destination + " | " + snapshot.val().time)+ " | " + snapshot.val().frequency_name;
       // If any errors are experienced, log them to console.
-    }, function(errorObject) {
+    },  
+    function(errorObject) {
       console.log("The read failed: " + errorObject.code);
     });
