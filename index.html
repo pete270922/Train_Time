@@ -3,38 +3,35 @@
 <head>
 <meta charset="UTC-8">
 <title>Train_Time</title>
-
-    <!-- CSS -->
-    <link type="text/css" src="css/style.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 
-
 <body>
-
+        
 <h1 id="head-line">Anytime is Train Time</h1>
 
 <table>
     <header>Current Train Schedule</header>
     <th>
-        <tr> Train Name</tr>
-        <tr> Destination</tr>
-        <tr> Frequency(min)</tr>
-        <tr> Next Arrival</tr>
-        <tr> Minutes Away</tr>
+        <tr> Train Name </tr>
+        <tr> Destination </tr>
+        <tr> Frequency(min) </tr>
+        <tr> Next Arrival </tr>
+        <tr> Minutes Away </tr>
     </th>
 
 </table>
 
 <!--Timer and start button-->
 <form>
-<label for="name-input"> Train Name:</label>
-<input class="form-control" id="name-input" value="Save" type="text">
-<label for="destination-input">Destination:</label>
-<input class="form-control" id="destination-input" value="Save" type="text">
-<label for="time-input">First Train Time:</label>
-<input class="form-control" id="time-input" value="Save" type="text">
-<label for="frequency-input">Frequency:</label>
-<input class="form-control" id="frequency-input" value="Save" type="text">
+<label for="name-input"> Train Name: </label>
+<input class="form-control" id="name-input" value="" type="text">
+<label for="destination-input">Destination: </label>
+<input class="form-control" id="destination-input" value="" type="text">
+<label for="time-input">First Train Time: </label>
+<input class="form-control" id="time-input" value="" type="text">
+<label for="frequency-input">Frequency: </label>
+<input class="form-control" id="frequency-input" value="" type="text">
 
 <!-- Submit Button -->
 <button id="click-button" type="submit">Submit</button>
@@ -42,6 +39,8 @@
 
 </body>
 
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
      <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Game Logic -->
